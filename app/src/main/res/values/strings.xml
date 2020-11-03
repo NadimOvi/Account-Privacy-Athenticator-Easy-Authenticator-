@@ -1,0 +1,6 @@
+<resources>
+    <string name="version" translatable="false">Version\n1.0.3</string>
+    <string name="abturl" translatable="false">http://gtrbd.com/</string>
+    <string name="gtr" translatable="false">Genuine Technology\nand\nResearch Limited</string>
+    <string name="powered_by_genuine_technology_research_limited" translatable="false"><![CDATA[Powered by \nGenuine Technology & Research Limited]]></string>
+</resources>

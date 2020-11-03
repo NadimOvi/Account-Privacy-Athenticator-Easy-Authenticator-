@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="org.shadowice.flocke.easyauthenticator.Activities.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/easy_authenticator_logo"
+            android:layout_gravity="center"
+            android:id="@+id/image"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:gravity="center"
+            android:text="@string/powered_by_genuine_technology_research_limited"
+            android:textStyle="bold"
+
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:gravity="center"
+            android:text="@string/version"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="120dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

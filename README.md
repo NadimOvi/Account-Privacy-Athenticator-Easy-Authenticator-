@@ -1,25 +1,11 @@
 #  easyauthenticator -  Android OTP Authenticator
 
-[![Build Status](https://travis-ci.org/easyauthenticator/easyauthenticator.svg?branch=master)](https://travis-ci.org/easyauthenticator/easyauthenticator)
-[![Current release](https://img.shields.io/github/release/easyauthenticator/easyauthenticator/all.svg)](https://github.com/easyauthenticator/easyauthenticator/releases/download/v0.8.0-beta2/easyauthenticator_v0.8.0-beta2.apk)
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/easyauthenticator/localized.svg)](https://crowdin.com/project/easyauthenticator)
-[![Chat - Telegram](https://img.shields.io/badge/chat-Telegram-blue.svg)](https://t.me/easyauthenticator)
-[![Chat - Matrix](https://img.shields.io/badge/chat-Matrix-blue.svg)](https://matrix.to/#/#easyauthenticator:privacytools.io)
-
-![easyauthenticator](./assets/logo.png)
-
 easyauthenticator is a two-factor authentication App for Android 5.1+.
 
 It implements Time-based One-time Passwords (TOTP) and HMAC-Based One-Time Passwords (HOTP).
 Simply scan the QR code and login with the generated 6-digit code.
 
-This project started out as a fork of the great [OTP Authenticator](https://github.com/0xbb/otp-authenticator) app written by [Bruno Bierbaumer](https://github.com/0xbb),
-which has sadly been inactive since 2015. By now almost every aspect of the app has been changed/re-written so the fork status of the Github repository got
-detached upon [user request](https://github.com/easyauthenticator/easyauthenticator/issues/145). But all credit for the original version and for starting this project still goes to Bruno!
 
-## Help wanted:
-I currently don't have that much time to spend developing easyauthenticator, so any contributions are always welcome.
-Don't worry, I will still continue to develop easyauthenticator it will just slow down from the incredible speed I had going in the beginning.
 
 ## Features:
 
@@ -59,11 +45,6 @@ key, which renders them useless.
 **Please only use the internal backup functions provided by easyauthenticator to backup your accounts!**
 **Everything else WILL result in data loss.**
 
-### Opening the backups on your PC:
-
- * [OpenPGP](https://openpgp.org/): OpenPGP can be used to easily decrypt the **OpenPGP-encrypted backups** on your PC.
- * [WebDecrypt](https://flocke.shadowice.org/easyauthenticator/decrypt/): JavaScript-based decryption of the **new password-protected backup format** in the browser ([source code](https://github.com/easyauthenticator/WebDecrypt)).
- * [easyauthenticator-decrypt](https://github.com/asmw/easyauthenticator-decrypt): Python script written by @asmw to decrypt the **old and new password-protected backup format** on your PC.
 
 ### Automatic backups:
 
@@ -71,36 +52,7 @@ key, which renders them useless.
    - **org.shadowice.flocke.easyauthenticator.broadcast.PLAIN_TEXT_BACKUP**: Perform a plain text backup. **WARNING**: This will save your 2FA tokens onto the disk in an unencrypted manner!
    - **org.shadowice.flocke.easyauthenticator.broadcast.ENCRYPTED_BACKUP**: Perform an encrypted backup of your 2FA database using the selected password in settings.
 
-## Migration:
 
-Check out [this](https://github.com/easyauthenticator/easyauthenticator/wiki/Migration) wiki page to learn about the different ways to migrate to easyauthenticator from other 2FA apps.
-
-## Downloads:
-
-[<img height=80 alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" />](https://play.google.com/store/apps/details?id=org.shadowice.flocke.easyauthenticator)
-[<img height=80 alt="Get it on F-Droid" src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" />](https://f-droid.org/packages/org.shadowice.flocke.easyauthenticator/)
-[<img height=80 alt="Get it on GitHub" src="https://raw.githubusercontent.com/flocke/easyauthenticator/master/assets/badges/get-it-on-github.png" />](https://github.com/easyauthenticator/easyauthenticator/releases)
-
-**Warning**: All three versions (Google Play, F-Droid and the APKs) are not compatible (not signed by the same key)!
-You will have to uninstall one to install the other, which will delete all your data.
-So make sure you have a **current backup** before switching!
-
-## Contribute:
-
- * **Translation**: If you want to help translate easyauthenticator into your language head over to the [Crowdin project](https://crowdin.com/project/easyauthenticator).
- * **Bug reports and feature requests**: You can report bugs and request features in the [Issue tracker](https://github.com/easyauthenticator/easyauthenticator/issues) on GitHub.
- * **Requesting thumbnails**: If you are missing a thumbnail you can request it by [opening a thumbnail request](https://github.com/easyauthenticator/easyauthenticator/issues/new/choose).
- * **Discussion and support**: 
-   - [XDA thread](https://forum.xda-developers.com/android/apps-games/app-easyauthenticator-android-otp-authenticator-t3636993) (please keep off-topic to a minimum)
-   - Telegram group [@easyauthenticator](https://t.me/easyauthenticator) (if you just want important updates you can mute the group so you only get notified about pinned messages)
-   - Matrix channel [#easyauthenticator:privacytools.io](https://matrix.to/#/#easyauthenticator:privacytools.io)
-
-#### Donations:
-
-If you want to show your appreciation for our work with a small donation you can do so using the following links:
-
- * [Donate to Jakob Nixdorf](https://flocke.shadowice.org/donate.html) (Main developer, maintainer)
- * [Donate to Richy HBM](https://richyhbm.co.uk/donate) (Developer)
 
 ## Screenshots:
 #### Light theme:
